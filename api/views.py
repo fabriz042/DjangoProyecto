@@ -1,5 +1,6 @@
 from django.http import JsonResponse
+from .models import Producto
 
-def simple_api(request):
-    data = {"mensaje": "Hola, esta es una API simple"}
-    return JsonResponse(data)
+def lista_productos(request):
+    productos = Producto.objects.all().values()  # Devuelve todos los productos
+    return JsonResponse({"productos": list(productos)})

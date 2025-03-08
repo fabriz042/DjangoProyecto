@@ -1,6 +1,6 @@
 from django.urls import path
-from .views import simple_api
+from .views import lista_productos
 
 urlpatterns = [
-    path('mensaje/', simple_api),
+    path('productos/', lista_productos),  # Solo "productos/", sin "api/"
 ]
