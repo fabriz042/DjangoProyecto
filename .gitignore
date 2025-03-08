@@ -1,0 +1,41 @@
+# Ignorar archivos de configuración sensibles
+.env
+*.env
+config.json
+secrets.json
+
+# Archivos de la base de datos SQLite
+*.sqlite3
+
+# Archivos compilados de Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Archivos de logs
+*.log
+
+# Archivos de migraciones innecesarios
+*/migrations/*.py
+*/migrations/*.pyc
+
+# Ignorar dependencias
+venv/
+env/
+*.egg-info/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Archivos de Django y estáticos generados
+staticfiles/
+media/
+*.pyc
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de configuraciones de IDEs
+.vscode/
+.idea/
+*.swp
